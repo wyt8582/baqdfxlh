@@ -1,0 +1,10 @@
+Sure, here is an example of Java code that demonstrates a vulnerability related to Insecure Deserialization:
+
+```java
+import java.io.*;
+
+public class InsecureDeserializationExample {
+    public static void main(String[] args) {
+        try {
+            // Simulate user input in the form of a serialized object
+            String userInput = "aced0005737200246a6176612e6c616e672e52756e74696d652450726f78791b7dc57dca02000149000976616c7565737400124c6a6176612f6c616e672f537472696e673b78707372002b636f6d2e7365727665722e7365727665722e53657269616c697a656450726f78686c066872001269737369676e6564546f53657269616c697a65687074000a5f5f68656164657271007effffffff0c770800000024000249000576616c75657400074c6a6176612f4c616e673b78707400056368696c6474000a496e736563
